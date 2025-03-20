@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screens/future_provider_page.dart';
+import 'package:riverpod_example/screens/stream_provider_page.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: FutureProviderPage(),
+      home: StreamProviderPage(),
     );
   }
 }
