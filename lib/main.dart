@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screens/provider_family_page.dart';
+import 'package:riverpod_example/routes/app_routes.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ProviderFamilyPage(),
+      routerConfig: appRouter,
     );
   }
 }
