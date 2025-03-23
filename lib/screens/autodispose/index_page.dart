@@ -28,6 +28,12 @@ class IndexPage extends ConsumerWidget {
                   (newValue) =>
                       ref.read(themeChangeProvider.notifier).state = newValue,
             ),
+            ElevatedButton(
+              onPressed: () {
+                context.push('/team_search');
+              },
+              child: Text('Team Search Page'),
+            ),
           ],
         ),
       ),
